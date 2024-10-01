@@ -471,3 +471,9 @@ height: 250px;
         ;
     }
 }
+@media screen and (max-width:415px) {
+
+    #searchInput{
+        width: 100px;
+    }
+}
