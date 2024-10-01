@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+          <span><img src="logo.svg" alt="" /></span>
+          <button>Sign In</button>
+        </nav>
+        <div class="box"></div>
+        <div class="hero">
+            <div id="heading">
+                <span> Unlimited movies, TV shows, and more </span><br>
+                  <span>Watch anywhere. Cancel anytime. </span><br>
+                  <span
+                    ><h6>Ready to watch? Enter your movie title to create or restart your
+                    membership.</h6>
+                  </span>
+            </div>
+          <div class="search-bar">
+            <input id="searchInput" type="text" placeholder="Enter a movie title" />
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="loadingSpinner" class="hidden">Loading...</div>
+        <div id="errorMessage" class="error-message"></div>
+        <div id="movieDetails" style="height: 400px;" class="movie-details hidden">
+            <div class="imgMovie">
+                <img id="moviePoster" class="poster" alt="Movie Poster" />
+            </div>
+            <div class="otherDetails">
+                <span>
+                    <h2 id="movieTitle"></h2>
+                    <p id="moviePlot"></p>
+                </span>
+                <div style="font-size: 10px;" class="movie-info">
+                    <span><strong>Year:</strong> <span id="movieYear"></span></span>
+                    <span><strong>IMDB Rating:</strong> <span id="movieRating"></span></span>
+                    <span><strong>Genre:</strong> <span id="movieGenre"></span></span>
+                    <span><strong>Director:</strong> <span id="movieDirector"></span></span>
+                    <span><strong>Actors:</strong> <span id="movieActors"></span></span>
+                    <span><strong>Runtime:</strong> <span id="movieRuntime"></span></span>
+                    <span><strong>Released:</strong> <span id="movieReleased"></span></span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="seperation"></div>
+      </div>
+      
+      <section class="first">
+        <div >
+          
+          <span>Enjoy on your TV</span>
+          <span> Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</span>
+        </div>
+        <div class="secImg">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+          <video src="video-tv-0819.m4v" autoplay loop muted></video>
+          
+        </div>
+      </section>
+      <div class="seperation"></div>
+  
+      <section class="first">
+        <div class="secImg">
+          <img src="mobile-0819.jpg" alt=""></div>
+        <div >
+         <span>Download your shows to watch offline
+        </span>
+        <span>Save your favorites easily and always have something to watch.
+      </span>
+        </div>
+    </section>
+      <div class="seperation"></div>
+  
+  
+      <section class="first">
+        <div >
+         
+          <span>Watch everywhere
+          </span>
+        <span>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+  
+        </div>
+        </span>
+        <div class="secImg">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+          <video src="video-tv-0819.m4v" autoplay loop muted></video>
+          
+        </div>
+          
+        </div>
+      </section>
+      
+    <div class="seperation"></div>
+    <section class="first">
+      <div class="secImg" alt="">
+        <img src="AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png" alt="">
+      </div>
+      <div >
+        
+        <span>Enjoy on your TV</span>
+        <span> Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</span>
+      </div>
+    </section>
+    <div class="seperation"></div>
+  
+    <div class="faq">
+      <h2>Frequently Asked Question</h2>
+      <div class="faqBox">
+        <span>What is Netflix</span>
+      </div>
+      <div class="faqBox">
+        <span>How much does Netflix cost?</span>
+      </div>
+      <div class="faqBox">
+        <span>Where can I watch?</span>
+      </div>
+      <div class="faqBox">
+        <span>How do I cancel?</span>
+      </div>
+      <div class="faqBox">
+        <span>What can I watch on Netflix?</span>
+      </div>
+    </div>
+  
+    <div class="seperation"></div>
+  
+    <footer>
+      <div class="footer">
+        <div class="footer-items">
+        <a href="faq">Privacy</a>
+        <a href="faq">Corporate Information</a>
+        </div>
+        <div class="footer-items">
+        <a href="faq">FAQ</a>
+        <a href="faq">Account</a>
+        </div>
+        <div class="footer-items">
+          <a href="faq">Investor Relaions</a>
+          <a href="faq">Ways to Watch</a>
+        </div>
+        <div class="footer-items">
+          <a href="faq">Speed Test</a>
+          <a href="faq">Only On Netflix</a>
+        </div>
+        
+        
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
