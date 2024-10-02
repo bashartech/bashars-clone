@@ -1,4 +1,22 @@
 const heading = document.getElementById("heading")
+const btnSign = document.getElementById("btnSign")
+const form = document.getElementById("form")
+const formBtn = document.getElementById("formBtn")
+const username = document.getElementById("username")
+const user = document.getElementById("user")
+
+btnSign.addEventListener("click", ()=>{
+form.style.display = "flex"
+btnSign.style.display = "none"
+})
+
+formBtn.addEventListener("click", (e)=>{
+    e.preventDefault()
+    form.style.display = "none"
+    btnSign.style.display = "none"
+    user.style.display = "flex"
+    user.textContent = username.value
+})
 
 document.getElementById('searchButton').addEventListener('click', async function() {
    
@@ -54,46 +72,3 @@ movieDetails.style.overflow = "none"
     }
      
 });
-
-// const searchButton = document.getElementById('searchButton');
-// const searchInput = document.getElementById('searchInput');
-// const movieDetails = document.getElementById('movieDetails');
-// const heading = document.getElementById('heading');
-
-// searchButton.addEventListener('click', async () => {
-//     // Remove content before the search bar (heading and other content)
-//     heading.style.display = 'none';
-
-//     const searchTerm = searchInput.value.trim();
-//     if (searchTerm === "") {
-//         movieDetails.innerHTML = `<p class="error">Please enter a valid movie title.</p>`;
-//         return;
-//     }
-
-//     // Clear previous movie details
-//     movieDetails.innerHTML = '';
-
-//     try {
-//         const response = await fetch(`https://www.omdbapi.com/?t=${searchTerm}&apikey=your_api_key`);
-//         if (!response.ok) {
-//             throw new Error("Failed to fetch data");
-//         }
-        
-//         const data = await response.json();
-//         if (data.Response === "False") {
-//             throw new Error(data.Error);
-//         }
-
-//         // Display movie details
-//         movieDetails.innerHTML = `
-//             <img src="${data.Poster !== "N/A" ? data.Poster : 'placeholder.jpg'}" alt="${data.Title}">
-//             <h2>${data.Title} (${data.Year})</h2>
-//             <p><strong>Plot:</strong> ${data.Plot}</p>
-//             <p><strong>Director:</strong> ${data.Director}</p>
-//             <p><strong>Actors:</strong> ${data.Actors}</p>
-//             <p><strong>IMDB Rating:</strong> ${data.imdbRating}</p>
-//         `;
-//     } catch (error) {
-//         movieDetails.innerHTML = `<p class="error">${error.message}. Please try another movie.</p>`;
-//     }
-// });
